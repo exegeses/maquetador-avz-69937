@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: #0C0809;
+    font-family: 'Barlow', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    height: 640px;
+    background-color: #FFC61A;
+    background-image: url(../imgs/hero-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: center 0;
+}
+    #container header{
+        width: 1024px;
+        height: 104px;
+        margin: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #container header a{
+            color: #fff;
+            font-size: 24px;
+        }
+        #container header a span{
+            color: #FFC61A;
+        }
+
+        #container header a img{
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+
+        #container nav a{
+            font-size: 20px;
+            padding: 12px;
+        }
+
+    #container div{
+        width: 700px;
+        height: 474px;
+        margin: 24px auto 0px auto;
+        text-align: center;
+    }
+        #container div h1{
+            font-size: 24px;
+            color: #fff;
+        }
+        #container div span{
+            color: #FFC61A;
+        }
+    #telefono{
+        font-size: 32px;
+        font-weight: 600;
+        display: block;
+        margin-top: 12px;
+        margin-bottom: 40px;
+    }
