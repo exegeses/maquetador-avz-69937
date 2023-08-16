@@ -70,3 +70,29 @@ a{
         margin-top: 12px;
         margin-bottom: 40px;
     }
+
+/* seccion información */
+
+#informacion {
+    width: 1024px;
+    height: 388px;
+    margin: 64px auto;
+
+    display: flex;
+    column-gap: 52px;
+}   
+    #informacion article{
+        width: 460px;
+        padding: 16px 24px;
+
+    }
+    #informacion article p{
+        margin-top: 24px;
+    }
+
+    #informacion article div{
+       margin-top: 24px;
+        display: flex;
+
+        background-color: #f9cff8;
+    }
