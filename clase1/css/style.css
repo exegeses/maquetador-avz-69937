@@ -91,8 +91,42 @@ a{
     }
 
     #informacion article div{
-       margin-top: 24px;
-        display: flex;
+       margin-top: 24px;   
+       padding-left: 72px;
+       background-image: url(../imgs/handshake.png);
+       background-repeat: no-repeat;
+       background-position: 0 center;
+    }
+    #rapido{
+        background-image: url(../imgs/world.png) !important;
+    }
 
-        background-color: #f9cff8;
+
+#express{
+    height: 400px;
+    background-color: #0C0809;
+    color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    #express article{
+        width: 232px;
+        text-align: center;
+        margin: 16px;
+    }
+
+    #express h2{
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+    }
+    #express h2, 
+    #express article h3
+    {
+        color: #FFC61A;
+    }
+    #express article img{
+        margin: 24px;
     }

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #280247;
+    height: 100vh; /* viewport height */
+    
+    display: flex;
+    align-items: center;
+}
+    #contenedor{
+        width: 50vw;
+        height: 50vh;
+        margin: auto;
+        border-radius: 24px;
+        background-color: #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #contenedor img{
+            max-width: 90%;
+            max-height: 75%;
+            border-radius: 16px;
+        }
