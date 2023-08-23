@@ -1,0 +1,45 @@
+body{
+    background-color: #F1AA20;
+}
+    body:before{
+        content: ' más de 1024px';
+        font-size: 3em;
+    }
+
+/* hasta 1024px */
+@media (max-width: 1024px){
+    body{
+        background-color: #FFC658;
+    }
+    body:before{
+        content: '1024px';
+    }
+}
+/* hasta 768px */
+@media ( max-width: 768px ) {
+    body{
+        background-color: #FBD387;
+    }
+    body:before{
+        content: '768px';
+    }
+}
+/* hasta 640px */
+@media ( max-width: 640px ){
+    body{
+        background-color: #FCE2B0;
+    }
+    body:before{
+        content: '640px';
+    }
+}
+
+/**/
+@media screen {
+    body{
+        width: 24cm;
+    }
+    header{
+
+    }
+}
