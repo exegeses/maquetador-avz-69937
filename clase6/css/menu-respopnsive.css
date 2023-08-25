@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    background-color: #3D4043;
+}
+
+a{
+    text-decoration: none;
+}
+
+header a{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* 768 */
+@media ( max-width: 768px ){
+    header{
+        width: 768px;
+        height: 80px;
+        background-color: #E29086;
+    }
+        header a img{
+            margin: 8px 12px;
+            vertical-align: middle;
+        }
+        /* selector de atributo */
+        header img[alt="menu"]{
+            position: absolute;
+            top: 24px;
+            right: 12px;
+            width: 32px;
+            cursor: pointer;
+        }
+
+        /* barra de navegación */
+        header nav{
+            /* estado inicial - cuando carga la página */
+            transform: translateY( calc( -225px - 80px ) );
+            transition: 500ms;
+        }
+        .desplegado{
+            transform: translateY(0px);
+        }
+
+        header nav a{
+            width: 768px;
+            display: block;
+            padding: 8px;
+            text-align: center;
+            background-color: #E29086;
+        }
+        header nav a:hover{
+            background-color: #dd7b6d;
+        }
+}
+
