@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    background-color: #3D4043;
+}
+
+a{
+    text-decoration: none;
+}
+
+header a{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+/* 1024px */
+header{
+    width: 1024px;
+    margin: auto;
+    height: 80px;
+    background-color: #E29086;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    header a img{
+        margin: 8px 12px;
+        vertical-align: middle;
+    }
+    /* navegación */
+    header nav{
+        margin-right: 12px;
+    }
+    header nav a{
+        padding: 10px;
+    }
+
+    header img[alt="menu"]{
+        /* ocultamos hamburger */
+        display: none;
+    }
+
+/* hero-banner */
+#hero-banner{
+    width: 1024px;
+    height: 800px;
+    background-image: url(../imgs/hero-banner.jpg);
+    background-position: -280px 0;
+    background-color: #F17580;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+    #hero-banner div{
+        width: 164px;
+        text-align: center;
+        margin-right: 80px;
+    }
+        #hero-banner div h1{
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+        #hero-banner div a{
+            border: 1px solid #fff;
+            padding: 12px 46px;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 24px;
+            transition: 500ms;
+        }
+        #hero-banner div a:hover{
+            background-color: #fff;
+            color: #F17580;
+        }
+
+/* seccion servicios */
+#servicios{
+    width: 1024px;
+    height: 288px;
+    background-color: #fff;
+    margin: 56px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    #servicios article{
+        width: 384px;
+        height: 128px;
+        background-color: #f8dddd;
+    }
+    #servicios article::before{
+        content: url("../imgs/delivery.png");
+        position: absolute;
+    }
+    #servicios article h2{
+        margin-left: 144px;
+    }
+    #servicios article p{
+        margin-left: 144px;
+    }
+
+
+/* 768px */
+@media ( max-width: 768px ){
+    header{
+        width: 768px;
+        display: block;
+    }
+        /* selector de atributo */
+        header img[alt="menu"]{
+            position: absolute;
+            top: 24px;
+            right: 12px;
+            width: 32px;
+            cursor: pointer;
+            /* mostrar hamburger */
+            display: inline;
+        }
+
+        /* barra de navegación */
+        header nav{
+            /* estado inicial - cuando carga la página */
+            transform: translateY( calc( -225px - 80px ) );
+            transition: 500ms;
+        }
+        .desplegado{
+            transform: translateY(0px);
+        }
+
+        header nav a{
+            width: 768px;
+            display: block;
+            padding: 8px;
+            text-align: center;
+            background-color: #E29086;
+        }
+        header nav a:hover{
+            background-color: #dd7b6d;
+        }
+    /* hero-banner */
+    #hero-banner{
+        width: 768px;
+        height: 1002px;
+        background-repeat: no-repeat;
+        align-items: end;
+        justify-content: center;
+    }
+        #hero-banner div{
+            margin-right: 0;
+            margin-bottom: 32px;
+            width: 282px;
+        }
+}
+

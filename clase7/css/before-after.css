@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    background-color: #144b18;
+    font-size: 2em;
+}
+    main{
+        width: 768px;
+        margin: 32px auto;
+    }
+        h1{
+            color: #8efba6;
+        }
+        p{
+            margin: 24px 0px;
+            background-color: #fff;
+            padding: 24px;
+        }
+        p::before{
+            /*content: '♥';*/
+            content: url("../imgs/right.png");
+        }
+        p::after{
+            /*content: '♥';*/
+            content: url("../imgs/left.png");
+        }
+        p:hover{
+            color: #3e8349;
+        }
