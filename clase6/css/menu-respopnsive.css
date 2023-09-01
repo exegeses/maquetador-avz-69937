@@ -45,6 +45,8 @@ header a{
             /* estado inicial - cuando carga la página */
             transform: translateY( calc( -225px - 80px ) );
             transition: 500ms;
+            position: relative;
+            z-index: -10;
         }
         .desplegado{
             transform: translateY(0px);

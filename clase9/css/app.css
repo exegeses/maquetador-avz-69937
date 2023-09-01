@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Barlow',sans-serif;
+    font-weight: 300;
+    /* font-size: 1.5rem; */
+    font-size: 20px;
+    color: #273237;
+}
+a{
+    text-decoration: none;
+}
+
+/* 768px */
+header{
+    height: 96px;
+    background-color: #273237;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /*header a img*/
+    img[alt="The Big M"]
+    {
+        width: 64px;
+        margin-left: 16px;
+    }
+    header nav{
+        /* cambiar para el menu */
+        display: none;
+    }
+    img[alt="hamburger"]{
+        width: 24px;
+        margin-right: 16px;
+    }
+
+main{
+    margin-top: 24px;
+}
+#servicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    padding: 0px 4px;
+}
+    #servicios article{
+        height: 740px;
+        box-shadow: 0px 0px 8px rgba(39, 50, 55, 0.5);
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        .snap{
+            width: 100%;
+            border-radius: 8px;
+        }
+        #servicios article h2{
+            font-size: 20px;
+            font-weight: 400;
+            margin: 24px;
+            width: 100%;
+        }
+        #servicios article h2::before{
+            content: url("../imgs/php-24.png");
+            position: relative;
+            top: 4px;
+            margin-right: 12px;
+        }
+            .rating{
+                margin-left: 24px;
+            }
+            .price{
+                margin-right: 24px;
+            }
+        .call-to-action{
+            width: 100%;
+            margin: 56px 80px 56px 80px;
+            display: grid;
+            grid-template-columns: repeat( 2, 1fr );
+            column-gap: 88px;
+
+            text-align: center;
+        }
+            .info{
+                background-color: #7499AA;
+                color: #fff;
+                border-radius: 8px;
+                padding: 4px;
+            }
+            .demo{
+                background-color: #466472;
+                color: #fff;
+                border-radius: 8px;
+                padding: 4px;
+            }
+
+footer{
+    height: 13px;
+    background-color: #273237;
+}    
+    
+/* 769 hasta 1024 */
+@media ( min-width: 769px ) {
+    body{
+        background-color: #466472;
+    }
+}
