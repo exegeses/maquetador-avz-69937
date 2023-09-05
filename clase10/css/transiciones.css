@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 24px;
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #282736;
+    color: #b6b2f7;
+    width: 768px;
+    margin: 32px auto;
+}
+
+    #primero, #segundo,
+    #tercero, #cuarto,
+    #contenedor{
+        margin: 24px 0px;
+        padding: 16px;
+        background-color: #37364b;
+    }
+
+    #primero{
+        margin: 24px 0px;
+        cursor: pointer;
+        background-color: #37364b;
+        /* transition: .5s;*/
+        transition-property: font-size, color;
+        transition-duration: 2s;
+        /* demora hasta que comience */
+        transition-delay: 2s;
+    }
+        #primero:hover{
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+    #box{
+        width: 100px;
+        height: 100px;
+        background-color: #b6b2f7;
+        /* transitiom-duration
+           transition-property
+           transition-timing-function
+           transition-delay
+         */
+        transition: width 2s, height 2s,
+                    background-color 2.5s,
+                    rotate 2s;
+        transition-timing-function: cubic-bezier(0.37, 0, 0.52, 1.01);
+
+    }
+    #box:hover{
+        background-color: #cfccfc;
+        width: 200px;
+        height: 200px;
+        rotate: 270deg;
+    }
+
+    #cuarto{
+        width: 100px;
+        height: 50px;
+        transition: width 1s,
+                    height 1s 1s;
+    }
+    #cuarto:hover{
+        width: 100%;
+        height: 256px;
+    }
+    #contenedor {
+        text-align: center;
+    }
+        #contenedor span{
+            width: 4px;
+            height: 24px;
+            background-color: #cfccfc;
+            display: inline-block;
+            margin-right: 8px;
+            transition: 1s;
+        }
+        #contenedor a{
+            color: #cfccfc;
+            text-decoration: none;
+        }
+        #contenedor a:hover span{
+            transform: translateX( 104px );
+        }

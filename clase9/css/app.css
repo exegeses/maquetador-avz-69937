@@ -107,8 +107,53 @@ footer{
 }    
     
 /* 769 hasta 1024 */
-@media ( min-width: 769px ) {
-    body{
-        background-color: #466472;
+@media ( min-width: 1023px ) {
+    #servicios{
+        padding: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+        #servicios article{
+            height: 472px;
+        }
+        #servicios article h2{
+            margin: 24px 24px 16px 24px;
+        }
+        .rating img{
+            width: 24px;
+        }
+        .call-to-action{
+            margin: 32px 24px;
+            column-gap: 20px;
+        }
+            .info,
+            .demo{
+                padding: 5px 0px 7px 0px;
+            }
+}
+
+/* 1025 hasta 1200 */
+@media ( min-width: 1199px ) {
+    #servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+        #servicios article{
+            height: 403px;
+        }
+        .call-to-action{
+            column-gap: 42px;
+        }
+}
+/* desde 1200 */
+/* @media ( min-width: 1200px ){ */
+@media ( width >= 1200px  ) {
+
+    main{
+        max-width: 1400px;
+        margin: auto;
+    }
+    #servicios{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
